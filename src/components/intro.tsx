@@ -36,7 +36,7 @@ function Intro() {
             I am <span className="text-blue-500">Bishal K.</span> <br />
             Junior Software. <br /> Developer
           </p>
-          <button className="bg-blue-500 text-white h-[2rem] px-10 rounded-md mt-5">
+          <button className="bg-blue-500 text-white h-[2.4rem] px-10 rounded-md mt-5">
            <a href="https://www.facebook.com/bishalkurmi.bishal.5">Contact</a> 
           </button>
           <div className="mt-6 gap-10 pl-5 flex flex-row">
@@ -47,7 +47,7 @@ function Intro() {
         <img
           src={intro}
           alt="Intro"
-          className=" max-w-[92%]  ml-[60px]  shadow-lg"
+          className=" max-w-[92%]   ml-[30px] shadow-lg"
         />
       </div>
     </div>

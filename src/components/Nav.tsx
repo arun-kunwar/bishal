@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
-import { MdCancel } from "react-icons/md";
+import { FiX } from "react-icons/fi";
 import { Link } from "react-scroll";
 const Nav = () => {
     const menuItems = [
         { name: "Home", to:"home" },
         { name: "About", to:"about" },
-        { name: "Photos", to:"Photo" },
+        { name: "Photos", to:"photo" },
         { name: "Contact Me", to:"contact" },
     ];
     const[setdata,showdata]=useState(false);
@@ -20,7 +20,7 @@ const Nav = () => {
         <div className="w-full fixed bg-white">
             <div  className="   h-[55px] w-[100vw] top-0 left-0 shadow-md flex justify-between items-center">
                 <div className="font-bold text-2xl pl-10" onClick={()=>reload()}>Bishal</div>
-                <div className="pr-3"> { setdata ? <MdCancel className="md:hidden size-6" onClick={()=>showdata(!setdata)}/>
+                <div className="pr-3"> { setdata ? <FiX className="md:hidden size-6" onClick={()=>showdata(!setdata)}/>
                 :<IoMdMenu className="md:hidden size-6" onClick={()=>showdata(!setdata)}/>}</div> 
                 <ul className="gap-14  hidden md:flex justify-center pr-[12rem] font-bold">
                     {menuItems.map((item, index) => (
