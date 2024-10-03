@@ -18,7 +18,7 @@ const Nav = () => {
     return (
         
         <div className="w-full fixed bg-white">
-            <div  className="   h-[55px] w-[100vw] top-0 left-0 shadow-md flex justify-between items-center">
+            <div  className="h-[55px] w-[100vw] top-0 left-0 shadow-md flex justify-between items-center">
                 <div className="font-bold text-2xl pl-10" onClick={()=>reload()}>Bishal</div>
                 <div className="pr-3"> { setdata ? <FiX className="md:hidden size-6" onClick={()=>showdata(!setdata)}/>
                 :<IoMdMenu className="md:hidden size-6" onClick={()=>showdata(!setdata)}/>}</div> 
